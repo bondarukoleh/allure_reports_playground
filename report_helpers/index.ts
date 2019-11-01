@@ -1,2 +1,2 @@
 export * from './mocha.report.helper'
-export * from './jasmine.report.helper'
+export * from './jasmine/jasmine.report.helper'

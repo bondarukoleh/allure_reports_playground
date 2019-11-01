@@ -1,10 +1,10 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const allureResultsPath = path.resolve(__dirname, '../allure-results')
-const allureEnvPropertiesPath = path.resolve(__dirname, '../allure-results/environment.properties')
-const allureCategoriesPath = path.resolve(__dirname, '../allure-results/categories')
-const allureEnvProperties = 'Automation_Browsers=Chrome\nTest_Report=Yes';
+const allureResultsPath = path.resolve(__dirname, '../../allure-results')
+const allureEnvPropertiesPath = path.resolve(__dirname, '../../allure-results/environment.properties')
+const allureCategoriesPath = path.resolve(__dirname, '../../allure-results/categories')
+const allureEnvProperties = 'Variable_FFOM_FILE=Yes\nTest_Report=Yes';
 const allureCategories = [
   {
     name: 'Skipped because of environment',

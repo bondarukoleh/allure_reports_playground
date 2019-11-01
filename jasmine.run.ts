@@ -8,13 +8,14 @@ jasmineRun.jasmine.DEFAULT_TIMEOUT_INTERVAL = 5_000
 
 jasmineRun.loadConfig({
   spec_dir: 'spec',
-  spec_files: ['*.spec.*'],
+  spec_files: ['**/*.spec.*'],
+  helpers: ['../report_helpers/jasmine.afterAll.*'],
   random: false,
   seed: null,
   stopSpecOnExpectationFailure: false,
 })
 
-jasmineRun.addReporter(new AllureReporter())
+jasmineRun.addReporter(new AllureReporter());
+jasmineRun.onComplete(() => setPropertiesToReport())
 
 jasmineRun.execute()
-setPropertiesToReport()

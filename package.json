@@ -5,8 +5,9 @@
   "main": "mocha.run.ts",
   "scripts": {
     "test:mocha": "ts-node mocha.run.ts",
-    "test:jasmine": "ts-node jasmine.run.ts",
-    "report": "allure generate -c && allure open"
+    "test:jasmine": "ts-node jasmine.run.ts && npm run report",
+    "report": "npm run _copy_history | allure generate -c && allure open",
+    "_copy_history": "ts-node ./report_helpers/jasmine/copy.history.ts"
   },
   "repository": {
     "type": "git",
