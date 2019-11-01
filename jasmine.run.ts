@@ -1,6 +1,7 @@
 // tslint:disable-next-line
 const Jasmine = require('jasmine')
 import * as AllureReporter from 'jasmine-allure-reporter'
+import {setPropertiesToReport} from './report_helpers'
 
 const jasmineRun = new Jasmine()
 jasmineRun.jasmine.DEFAULT_TIMEOUT_INTERVAL = 5_000
@@ -16,3 +17,4 @@ jasmineRun.loadConfig({
 jasmineRun.addReporter(new AllureReporter())
 
 jasmineRun.execute()
+setPropertiesToReport()

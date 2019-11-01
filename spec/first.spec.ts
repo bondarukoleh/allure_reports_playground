@@ -45,8 +45,17 @@ describe('Suite 1', () => {
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 7`, () => {
+  it(`Test 7 (broken)`, () => {
+    // statuses:  ['passed', 'pending', 'skipped', 'failed', 'broken']
     allure.epic('EPIC VALUE')
-    expect(true).eq(true, 'True should be true')
+    allure._allure.startStep('Broken Step')
+    allure._allure.endStep('broken')
+    allure._allure.endCase('broken', new Error('Waiter problem'))
+  })
+
+  xit('Test 8 (skipped)', () => {})
+
+  it('Test 8 (failed)', () => {
+    expect(true).eq(false, 'True should be true')
   })
 })
