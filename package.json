@@ -28,6 +28,7 @@
     "chai": "^4.2.0",
     "jasmine": "^3.5.0",
     "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-allure2-reporter": "^1.2.0",
     "mocha": "^6.2.2",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
