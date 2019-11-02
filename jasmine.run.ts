@@ -1,26 +1,35 @@
 // tslint:disable-next-line
 const Jasmine = require('jasmine')
-import * as AllureReporter from 'jasmine-allure-reporter'
-import {AllureInterface, JasmineAllureReporter, AllureRuntime} from 'jasmine-allure2-reporter'
+import * as Allure1Reporter from 'jasmine-allure-reporter'
+import {
+  AllureInterface,
+  JasmineAllureReporter as Allure2Reporter,
+  AllureRuntime
+} from 'jasmine-allure2-reporter'
 import {setPropertiesToReport} from './report_helpers'
 
-const args = process.argv; /* TODO: MAKE A START TEST FILE */
+const allureVersion = Number(process.env.allureV)
 const jasmineRun = new Jasmine()
-const allure2reporter = new JasmineAllureReporter(new AllureRuntime({resultsDir: './allure2-results'}));
-const allure1reporter = new AllureReporter({resultsDir: './allure1-results'})
-export const allure: AllureInterface = allure2reporter.getInterface();
+const reporterConfig = {resultsDir: `./allure${allureVersion}-results`};
+const getAllure2reporter = () => {
+  const allure2reporter = new Allure2Reporter(new AllureRuntime(reporterConfig))
+  // @ts-ignore /* to have allure globally, same as firs allure */
+  global.allure = allure2reporter.getInterface();
+  return allure2reporter
+}
+const getAllure1reporter = () => new Allure1Reporter(reporterConfig)
 
 jasmineRun.jasmine.DEFAULT_TIMEOUT_INTERVAL = 5_000
 jasmineRun.loadConfig({
   spec_dir: 'spec',
-  spec_files: ['**/*.spec.*'],
+  spec_files: allureVersion === 1 ? ['allure1/*.spec.*'] : ['allure2/*.spec.*'],
   helpers: ['../report_helpers/jasmine.afterAll.*'],
   random: false,
   seed: null,
   stopSpecOnExpectationFailure: false,
 })
 
-jasmineRun.addReporter(args.includes('allure1') ? allure1reporter : allure2reporter);
+jasmineRun.addReporter(allureVersion === 1 ? getAllure1reporter() : getAllure2reporter())
 jasmineRun.onComplete(() => setPropertiesToReport())
 
 jasmineRun.execute()

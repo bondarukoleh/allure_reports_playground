@@ -5,12 +5,11 @@
   "main": "mocha.run.ts",
   "scripts": {
     "test:mocha": "ts-node mocha.run.ts",
-    "test:jasmine": "ts-node jasmine.run.ts && npm run report",
-    "report1": "npm run _copy_history | npm run _generate_report1 && allure open ./allure1-report",
-    "report2": "npm run _copy_history | npm run _generate_report1 && allure open ./allure2-report",
+    "test:jasmine_allure1": "set allureV=1 || export allureV=1 && ts-node jasmine.run.ts && npm run report",
+    "test:jasmine_allure2": "set allureV=2 || export allureV=1 && ts-node jasmine.run.ts && npm run report",
+    "report": "npm run _copy_history | npm run _generate_report",
     "_copy_history": "ts-node ./report_helpers/jasmine/copy.history.ts",
-    "_generate_report1": "allure generate -c ./allure1-results -o ./allure1-report",
-    "_generate_report2": "allure generate -c ./allure2-results -o ./allure2-report"
+    "_generate_report": "ts-node ./report_helpers/jasmine/generate.report.ts"
   },
   "repository": {
     "type": "git",

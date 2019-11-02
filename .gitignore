@@ -2,8 +2,8 @@ node_modules
 package-lock.json
 .idea
 .vscode
-allure-results
-allure-report
+allure?-results
+allure?-report
 .jshintrc
 .jshintignore
 *.log
