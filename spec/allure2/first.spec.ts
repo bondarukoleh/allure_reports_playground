@@ -1,17 +1,17 @@
 import {expect} from 'chai'
-declare const allure;
+import {AllureInterface} from 'allure2-js-commons';
+declare const allure: AllureInterface;
 
 /* Playing around with second allure */
-
 describe('Suite 1 allure 2', () => {
   it('Test 1  allure 2', function () {
     console.log('\x1b[34mTest is running...\x1b[89m')
     expect(true).eq(true, 'True should be true')
-
-    allure._allure.startStep('step  in it');
-    allure.feature('FEATURE LABEL AAA');
-    allure._allure.addAttachment('attachement', 'test content');
-    allure._allure.endStep('passed');
+    allure.addLink('Link name', `www.com`)
+    // allure._allure.startStep('step  in it');
+    // allure.feature('FEATURE LABEL AAA');
+    // allure._allure.addAttachment('attachement', 'test content');
+    // allure._allure.endStep('passed');
   })
 
   it(`Test 2  allure 2`, () => {
