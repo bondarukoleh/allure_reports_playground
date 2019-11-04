@@ -1,12 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
 
-const allureVersion = Number(process.env.allureV)
-const allureResultsPath = path.resolve(__dirname, `../../allure${allureVersion}-results`)
-const allureEnvPropertiesPath = path.join(allureResultsPath, `/environment.properties`)
-const allureCategoriesPath = path.join(allureResultsPath, `/categories.json`)
-const allureExecutorPath = path.join(allureResultsPath, `/executor.json`)
-
 const allureEnvProperties = 'Variable_FFOM_FILE=Yes\nTest_Report=Yes';
 const allureCategories = [
   {
@@ -35,9 +29,13 @@ const executor = {
   reportName: 'Demo allure report'
 }
 
-function setPropertiesToReport() {
+function setPropertiesToReport(allureVersion: number) {
+  const allureResultsPath = path.resolve(__dirname, `../../allure${allureVersion}-results`)
+  const allureEnvPropertiesPath = path.join(allureResultsPath, `/environment.properties`)
+  const allureCategoriesPath = path.join(allureResultsPath, `/categories.json`)
+  const allureExecutorPath = path.join(allureResultsPath, `/executor.json`)
   try {
-    createResultsDirectory()
+    createResultsDirectory(allureResultsPath)
     console.log(allureEnvPropertiesPath);
     fs.writeFileSync(allureEnvPropertiesPath, allureEnvProperties, {encoding: 'utf8'})
     fs.writeFileSync(allureCategoriesPath, JSON.stringify(allureCategories), {encoding: 'utf8'})
@@ -48,12 +46,12 @@ function setPropertiesToReport() {
   }
 }
 
-function createResultsDirectory() {
+function createResultsDirectory(allureResultsPath: string) {
   if (!fs.existsSync(allureResultsPath)) {
     console.log(`Creating results directory "${allureResultsPath}"`)
     fs.mkdirSync(allureResultsPath)
   } else {
-    console.log(`Results directory "${allureResultsPath}" is already present.`)
+    console.log(`Setting properties: Results directory "${allureResultsPath}" is already present.`)
   }
 }
 

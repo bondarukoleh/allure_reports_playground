@@ -4,15 +4,14 @@ import * as path from 'path';
 /* ATTENTION: To set trend properly we must run report each time test are ran
  because we need to copy generated history to allure result folder after each test run */
 
-const allureVersion = Number(process.env.allureV)
-const allureReportPath = path.resolve(__dirname, `../../allure${allureVersion}-report`)
-const allureReportHistory = path.resolve(__dirname, `../../allure${allureVersion}-report/history`)
-const allureResultsHistory = path.resolve(__dirname, `../../allure${allureVersion}-results/history`)
+function copyHistoryFromReport(allureVersion: number) {
+  const allureReportPath = path.resolve(__dirname, `../../allure${allureVersion}-report`)
+  const allureReportHistory = path.resolve(__dirname, `../../allure${allureVersion}-report/history`)
+  const allureResultsHistory = path.resolve(__dirname, `../../allure${allureVersion}-results/history`)
 
-function copyHistoryFromReport() {
   try {
     if (fs.existsSync(allureReportPath)) {
-      createResultHistory();
+      createResultHistory(allureResultsHistory);
       return fs.readdirSync(allureReportHistory).forEach((file) => {
         const reportHistoryFile = path.resolve(allureReportHistory, file);
         const resultHistoryFile = path.resolve(allureResultsHistory, file);
@@ -27,7 +26,7 @@ function copyHistoryFromReport() {
   }
 }
 
-function createResultHistory() {
+function createResultHistory(allureResultsHistory: string) {
   if (!fs.existsSync(allureResultsHistory)) {
     console.log(`Creating results history directory "${allureResultsHistory}"`)
     return fs.mkdirSync(allureResultsHistory, {recursive: true})
@@ -35,4 +34,4 @@ function createResultHistory() {
   console.log(`Results history directory "${allureResultsHistory}" is already created`);
 }
 
-copyHistoryFromReport()
+export {copyHistoryFromReport}

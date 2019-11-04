@@ -6,11 +6,12 @@ import {
   JasmineAllureReporter as Allure2Reporter,
   AllureRuntime
 } from 'jasmine-allure2-reporter'
-import {setPropertiesToReport} from './report_helpers'
-
-const allureVersion = Number(process.env.allureV)
+import {setPropertiesToReport, copyHistoryFromReport, generateReport} from './report_helpers'
+import * as argParser from 'minimist'
+const {allureV} = argParser(process.argv)
+const allureVersion = allureV
 const jasmineRun = new Jasmine()
-const reporterConfig = {resultsDir: `./allure${allureVersion}-results`};
+const reporterConfig = {resultsDir: `./allure${allureVersion}-results`}
 const getAllure2reporter = () => {
   const allure2reporter = new Allure2Reporter(new AllureRuntime(reporterConfig))
   // @ts-ignore /* to have allure globally, same as firs allure */
@@ -30,6 +31,10 @@ jasmineRun.loadConfig({
 })
 
 jasmineRun.addReporter(allureVersion === 1 ? getAllure1reporter() : getAllure2reporter())
-jasmineRun.onComplete(() => setPropertiesToReport())
+jasmineRun.onComplete(() => {
+  setPropertiesToReport(allureVersion)
+  copyHistoryFromReport(allureVersion)
+  generateReport(allureVersion)
+})
 
 jasmineRun.execute()

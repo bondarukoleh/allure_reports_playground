@@ -5,11 +5,8 @@
   "main": "mocha.run.ts",
   "scripts": {
     "test:mocha": "ts-node mocha.run.ts",
-    "test:jasmine_allure1": "set allureV=1 || export allureV=1 && ts-node jasmine.run.ts && npm run report",
-    "test:jasmine_allure2": "set allureV=2 || export allureV=1 && ts-node jasmine.run.ts && npm run report",
-    "report": "npm run _copy_history | npm run _generate_report",
-    "_copy_history": "ts-node ./report_helpers/jasmine/copy.history.ts",
-    "_generate_report": "ts-node ./report_helpers/jasmine/generate.report.ts"
+    "test:jasmine_allure1": "ts-node jasmine.run.ts --allureV=1",
+    "test:jasmine_allure2": "ts-node jasmine.run.ts --allureV=2"
   },
   "repository": {
     "type": "git",
@@ -32,6 +29,7 @@
     "jasmine": "^3.5.0",
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-allure2-reporter": "^1.2.0",
+    "minimist": "^1.2.0",
     "mocha": "^6.2.2",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
