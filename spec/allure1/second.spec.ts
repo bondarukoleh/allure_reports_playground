@@ -5,7 +5,7 @@ declare const allure;
 
 describe('Suite 2', () => {
   it(`Test 5`, () => {
-    allure.description('text down desc', 'text')
+    allure.description('This is test description', 'text')
     expect(true).eq(true, 'True should be true')
   })
 
