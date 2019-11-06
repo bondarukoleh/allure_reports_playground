@@ -4,10 +4,11 @@ import * as path from 'path';
 /* ATTENTION: To set trend properly we must run report each time test are ran
  because we need to copy generated history to allure result folder after each test run */
 
-function copyHistoryFromReport(allureVersion: number) {
-  const allureReportPath = path.resolve(__dirname, `../../allure${allureVersion}-report`)
-  const allureReportHistory = path.resolve(__dirname, `../../allure${allureVersion}-report/history`)
-  const allureResultsHistory = path.resolve(__dirname, `../../allure${allureVersion}-results/history`)
+function copyHistoryFromReport(allureVersion: number | string = '') {
+  const cwd = process.cwd()
+  const allureReportPath = path.resolve(cwd, `allure${allureVersion}-report`)
+  const allureReportHistory = path.resolve(cwd, `allure${allureVersion}-report/history`)
+  const allureResultsHistory = path.resolve(cwd, `allure${allureVersion}-results/history`)
 
   try {
     if (fs.existsSync(allureReportPath)) {

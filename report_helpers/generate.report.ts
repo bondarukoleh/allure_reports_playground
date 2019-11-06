@@ -1,6 +1,6 @@
 import * as allureCommandline from 'allure-commandline'
 
-function generateReport(allureVersion: number) {
+function generateReport(allureVersion: number | string = '') {
   const commands = ['generate', '-c', `./allure${allureVersion}-results`, '-o', `./allure${allureVersion}-report`]
 
   const reportGenerator = allureCommandline(commands)

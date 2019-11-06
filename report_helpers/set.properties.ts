@@ -29,8 +29,8 @@ const executor = {
   reportName: 'Demo allure report'
 }
 
-function setPropertiesToReport(allureVersion: number) {
-  const allureResultsPath = path.resolve(__dirname, `../../allure${allureVersion}-results`)
+function setPropertiesToReport(allureVersion: number | string = '') {
+  const allureResultsPath = path.resolve(process.cwd(), `allure${allureVersion}-results`)
   const allureEnvPropertiesPath = path.join(allureResultsPath, `/environment.properties`)
   const allureCategoriesPath = path.join(allureResultsPath, `/categories.json`)
   const allureExecutorPath = path.join(allureResultsPath, `/executor.json`)

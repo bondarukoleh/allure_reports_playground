@@ -1,7 +1,8 @@
 import {expect} from 'chai'
 import {AllureInterface, ContentType, Severity} from 'allure2-js-commons'
+import {MochaAllureInterface} from 'mocha-allure2-reporter/src/MochaAllureInterface'
 
-declare const allure: AllureInterface;
+declare const allure: AllureInterface | MochaAllureInterface;
 
 /* Playing around with second allure */
 describe('Suite 1 allure 2', () => {
@@ -17,6 +18,7 @@ describe('Suite 1 allure 2', () => {
 
   it(`Test 3  allure 2 Known`, () => {
     allure.setKnown()
+    throw new Error('Wait problem')
     expect(true).eq(true, 'True should be true')
   })
 
@@ -30,7 +32,7 @@ describe('Suite 1 allure 2', () => {
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 5  allure 2 severity`, () => {
+  it(`Test 6  allure 2 severity`, () => {
     /*BLOCKER = "blocker",
     CRITICAL = "critical",
     NORMAL = "normal",
@@ -40,39 +42,48 @@ describe('Suite 1 allure 2', () => {
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 6  allure 2 addIssue`, () => {
+  it(`Test 7  allure 2 addIssue`, () => {
     allure.addIssue('This is test issue')
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 7  allure 2 addTag`, () => {
+  it(`Test 8  allure 2 addTag`, () => {
     allure.addTag('This_is_test_tag')
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 8  allure 2 addTestType`, () => {
+  it(`Test 9  allure 2 addTestType`, () => {
     allure.addTestType('This_is_test_type')
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 9  allure 2 step`, () => {
-    allure.step('This is step', () => {
-      allure.attachment('Text attachment', `This is attachent content`, ContentType.TEXT)
+  it(`Test 10  allure 2 step and attachments`, () => {
+    allure.step('This is step 1', () => {
+      allure.attachment('Text attachment to step 1',
+          `This is attachment content`, ContentType.TEXT)
     })
+
+    allure.step('This is step 2', () => {
+      // @ts-ignore
+      allure.testAttachment('This is attachment to Test not Step 2',
+          'Content of attachment', ContentType.TEXT)
+    })
+
+    allure.step('This is step 3', () => {})
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 10  allure 2 addParameter`, () => {
+  it(`Test 11  allure 2 addParameter`, () => {
     allure.addParameter('Parameter_Name', 'Parameter_Value')
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 10  allure 2 setDescription`, () => {
+  it(`Test 12  allure 2 setDescription`, () => {
     allure.setDescription('This is test description')
     expect(true).eq(true, 'True should be true')
   })
 
-  it(`Test 10  allure 2 addEnvironment`, () => {
+  it(`Test 13  allure 2 addEnvironment`, () => {
     allure.addEnvironment('From test', 'Value')
     expect(true).eq(true, 'True should be true')
   })

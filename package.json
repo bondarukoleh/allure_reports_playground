@@ -4,7 +4,7 @@
   "description": "",
   "main": "mocha.run.ts",
   "scripts": {
-    "test:mocha": "ts-node mocha.run.ts",
+    "test:mocha_allure2": "ts-node mocha.run.ts --allureV=2",
     "test:jasmine_allure1": "ts-node jasmine.run.ts --allureV=1",
     "test:jasmine_allure2": "ts-node jasmine.run.ts --allureV=2"
   },
@@ -31,6 +31,7 @@
     "jasmine-allure2-reporter": "^1.2.0",
     "minimist": "^1.2.0",
     "mocha": "^6.2.2",
+    "mocha-allure2-reporter": "0.0.3",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
     "typescript": "^3.6.4"
