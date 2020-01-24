@@ -16,6 +16,12 @@ describe('Suite 1', () => {
 
   it(`Test 2`, () => {
     allure.story('STORY LABEL AAA');
+    allure.description(`
+    <b>THIS is link to some sh</b>
+    <a href="http://www.google.com">Google</a> <br>
+    <b>THIS is link to some sh 2</b>
+    <a href="http://www.yahoo.com">yahoo</a>
+  `, 'html');
     expect(true).eq(true, 'True should be true')
   })
 
