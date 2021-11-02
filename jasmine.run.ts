@@ -2,7 +2,7 @@
 const Jasmine = require('jasmine')
 import * as Allure1Reporter from 'jasmine-allure-reporter'
 import {JasmineAllureReporter as Allure2Reporter, AllureRuntime} from 'jasmine-allure2-reporter'
-import {setPropertiesToReport, copyHistoryFromReport, generateReport} from './report_helpers'
+import {writeResultProperties, copyHistoryFromReport, generateReport} from './report_helpers'
 import * as argParser from 'minimist'
 const {allureV} = argParser(process.argv)
 const allureVersion = allureV
@@ -28,7 +28,7 @@ jasmineRun.loadConfig({
 
 jasmineRun.addReporter(allureVersion === 1 ? getAllure1reporter() : getAllure2reporter())
 jasmineRun.onComplete(() => {
-  setPropertiesToReport(allureVersion)
+  writeResultProperties(allureVersion)
   copyHistoryFromReport(allureVersion)
   generateReport(allureVersion)
 })

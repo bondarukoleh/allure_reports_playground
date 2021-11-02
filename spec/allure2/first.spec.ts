@@ -38,7 +38,7 @@ describe('Suite 1 allure 2', () => {
     NORMAL = "normal",
     MINOR = "minor",
     TRIVIAL = "trivial"*/
-    allure.setSeverity(Severity.NORMAL)
+    allure.setSeverity(Severity.CRITICAL)
     expect(true).eq(true, 'True should be true')
   })
 
@@ -63,11 +63,12 @@ describe('Suite 1 allure 2', () => {
           `This is attachment content`, ContentType.TEXT)
     })
 
-    allure.step('This is step 2', () => {
-      // @ts-ignore
-      allure.testAttachment('This is attachment to Test not Step 2',
-          'Content of attachment', ContentType.TEXT)
-    })
+    /* Not working */
+    // allure.step('This is step 2', () => {
+    //   // @ts-ignore
+    //   allure.testAttachment('This is attachment to Test not Step 2',
+    //       'Content of attachment', ContentType.TEXT)
+    // })
 
     allure.step('This is step 3', () => {})
     expect(true).eq(true, 'True should be true')

@@ -2,7 +2,7 @@ import * as Mocha from 'mocha'
 import * as path from 'path'
 import * as fs from 'fs'
 import * as argParser from 'minimist'
-import {setPropertiesToReport, copyHistoryFromReport, generateReport} from './report_helpers'
+import {writeResultProperties, copyHistoryFromReport, generateReport} from './report_helpers'
 
 const {allureV} = argParser(process.argv)
 
@@ -22,7 +22,7 @@ const tests = files.filter((file) => file.includes('.spec.'))
 tests.forEach((spec) => mocha.addFile(path.join(testDir, spec)))
 
 mocha.run((failures) => {
-  setPropertiesToReport()
+  writeResultProperties()
   copyHistoryFromReport()
   generateReport()
   process.exitCode = failures ? 1 : 0

@@ -29,14 +29,13 @@ const executor = {
   reportName: 'Demo allure report'
 }
 
-function setPropertiesToReport(allureVersion: number | string = '') {
+function writeResultProperties(allureVersion: number | string = '') {
   const allureResultsPath = path.resolve(process.cwd(), `allure${allureVersion}-results`)
   const allureEnvPropertiesPath = path.join(allureResultsPath, `/environment.properties`)
   const allureCategoriesPath = path.join(allureResultsPath, `/categories.json`)
   const allureExecutorPath = path.join(allureResultsPath, `/executor.json`)
   try {
     createResultsDirectory(allureResultsPath)
-    console.log(allureEnvPropertiesPath);
     fs.writeFileSync(allureEnvPropertiesPath, allureEnvProperties, {encoding: 'utf8'})
     fs.writeFileSync(allureCategoriesPath, JSON.stringify(allureCategories), {encoding: 'utf8'})
     fs.writeFileSync(allureExecutorPath, JSON.stringify(executor), {encoding: 'utf8'})
@@ -55,4 +54,4 @@ function createResultsDirectory(allureResultsPath: string) {
   }
 }
 
-export {setPropertiesToReport}
+export {writeResultProperties}
