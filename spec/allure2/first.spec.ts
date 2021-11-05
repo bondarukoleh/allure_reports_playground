@@ -88,4 +88,14 @@ describe('Suite 1 allure 2', () => {
     allure.addEnvironment('From test', 'Value')
     expect(true).eq(true, 'True should be true')
   })
+
+  it(`Test 14  allure 2 addLabel testId`, () => {
+    allure.addLabel('testId', 'www.someSite.com/123');
+    expect(true).eq(true, 'True should be true')
+  })
+
+  it(`Test 15  allure 2 addLabel issue`, () => {
+    allure.addLabel('issue', 'www.someSite.com/ISSUE-123');
+    expect(true).eq(true, 'True should be true')
+  })
 })

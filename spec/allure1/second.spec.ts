@@ -33,4 +33,14 @@ describe('Suite 2', () => {
   it('Test 9 (failed)', () => {
     expect(true).eq(false, 'True should be true')
   })
+
+  it(`Test 10 addLabel testId`, () => {
+    allure.addLabel('testId', '123');
+    expect(true).eq(true, 'True should be true')
+  })
+
+  it(`Test 11 addLabel issue`, () => {
+    allure.addLabel('issue', 'ISSUE-123');
+    expect(true).eq(true, 'True should be true')
+  })
 })

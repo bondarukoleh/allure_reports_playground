@@ -32,6 +32,7 @@ const executor = {
 function writeResultProperties(allureVersion: number | string = '') {
   const allureResultsPath = path.resolve(process.cwd(), `allure${allureVersion}-results`)
   const allureEnvPropertiesPath = path.join(allureResultsPath, `/environment.properties`)
+  const allurePropertiesPath = path.join(process.cwd(), `/allure.properties`)
   const allureCategoriesPath = path.join(allureResultsPath, `/categories.json`)
   const allureExecutorPath = path.join(allureResultsPath, `/executor.json`)
   try {
@@ -39,6 +40,9 @@ function writeResultProperties(allureVersion: number | string = '') {
     fs.writeFileSync(allureEnvPropertiesPath, allureEnvProperties, {encoding: 'utf8'})
     fs.writeFileSync(allureCategoriesPath, JSON.stringify(allureCategories), {encoding: 'utf8'})
     fs.writeFileSync(allureExecutorPath, JSON.stringify(executor), {encoding: 'utf8'})
+    fs.writeFileSync(allurePropertiesPath,
+      `allure.tests.management.pattern=%s\nallure.issues.tracker.pattern=%s`,
+      {encoding: 'utf8'})
   } catch (e) {
     console.warn(`Couldn't write env properties for report. Error is: ${e.message}`)
     console.warn(`Full error`, e)
