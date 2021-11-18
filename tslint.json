@@ -27,6 +27,8 @@
     "space-before-function-paren": false,
     "no-empty-interface": true,
     "no-empty": false,
-    "no-unused-expression": false
+    "no-unused-expression": false,
+    "max-line-length": false,
+    "prefer-const": false
   }
 }

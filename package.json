@@ -7,7 +7,8 @@
     "precommit": "tslint -e './node_modules/' -p ./tsconfig.json",
     "test:mocha_allure2": "ts-node mocha.run.ts --allureV=2",
     "test:jasmine_allure1": "ts-node jasmine.run.ts --allureV=1",
-    "test:jasmine_allure2": "ts-node jasmine.run.ts --allureV=2"
+    "test:jasmine_allure2": "ts-node jasmine.run.ts --allureV=2",
+    "zipAndSendResults": "node ./report_helpers/zipAndSendResult.js"
   },
   "repository": {
     "type": "git",
@@ -27,14 +28,18 @@
     "@types/node": "^12.12.3",
     "allure-commandline": "^2.13.0",
     "chai": "^4.2.0",
+    "form-data": "^4.0.0",
+    "fs-extra": "^10.0.0",
     "jasmine": "^3.5.0",
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-allure2-reporter": "^1.2.0",
     "minimist": "^1.2.0",
     "mocha": "^6.2.2",
     "mocha-allure2-reporter": "0.0.3",
+    "node-fetch": "^2.1.2",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "zip-a-folder": "^1.1.0"
   }
 }
