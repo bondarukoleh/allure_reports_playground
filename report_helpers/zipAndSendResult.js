@@ -7,7 +7,7 @@ const path = require('path')
 
 const {
   TEST_ENV = 'DEV',
-  BUILD_ID = '12347',
+  BUILD_ID = '12345',
   JOB_TYPE = 'core',
   ALLURE_SERVER_HOST = 'http://localhost:4000',
 } = process.env;

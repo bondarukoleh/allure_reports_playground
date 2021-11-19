@@ -21,18 +21,18 @@ const extractPathFromRequest = (request: Request): string => {
   return parsedPath /* Should return something like DEV\core */
 }
 
-function findReportPathByBuild(buildNumber: string, findInDirFullPath: string): string {
+const findReportPathByBuild = (buildNumber: string, findInDirFullPath: string): string | null => {
   const reportsPath = readDir(findInDirFullPath, []);
   const neededReportPath = reportsPath.find((reportPath) => path.basename(reportPath) === buildNumber);
+  /* neededReportPath - e.g. full_path/content/reports/DEV/core/12345 */
+
   if (!neededReportPath) {
-    throw new Error(`No such build number`);
+    return null
   }
 
-  const pathElements = neededReportPath.split(/[/\\]/);
+  const pathElements = neededReportPath.split(/[/\\]/); /* ['content', 'reports', 'DEV', 'core', '12345'] */
   const indexOfRelativePath = pathElements.indexOf(path.basename(findInDirFullPath)) + 1; /* To find where we need splice arr */
-  console.log('indexOfRelativePath')
-  console.log(pathElements.slice(indexOfRelativePath).join('/'))
-  return pathElements.slice(indexOfRelativePath).join('/'); /* To get relative path to report */
+  return pathElements.slice(indexOfRelativePath).join('/'); /* To get relative path to report e.g. DEV/core/12347 */
 }
 
 /*
