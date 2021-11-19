@@ -1,0 +1,12 @@
+node_modules
+.idea
+.vscode
+allure-*
+.jshintrc
+.jshintignore
+*.log
+build
+
+# ignore all in content except .keep file
+content/*
+!content/.keep
