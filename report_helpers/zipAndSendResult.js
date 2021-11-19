@@ -9,7 +9,7 @@ const {
   TEST_ENV = 'DEV',
   BUILD_ID = '12347',
   JOB_TYPE = 'core',
-  ALLURE_SERVER_HOST = 'http://localhost:4400',
+  ALLURE_SERVER_HOST = 'http://localhost:4000',
 } = process.env;
 
 const zippedResultsDirName =  path.resolve(process.cwd(),`zippedResults`);
@@ -26,7 +26,7 @@ const sendMergedResults = async () => {
   formData.append('reportTypes', JSON.stringify( [TEST_ENV, JOB_TYPE] ));
   console.info(`Zipped the allure report`);
   try {
-    return fetch(ALLURE_SERVER_HOST, {
+    return fetch(`${ALLURE_SERVER_HOST}/upload-results`, {
       body: formData,
       method: 'POST',
     });

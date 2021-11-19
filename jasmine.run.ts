@@ -20,7 +20,7 @@ jasmineRun.jasmine.DEFAULT_TIMEOUT_INTERVAL = 5_000
 jasmineRun.loadConfig({
   spec_dir: 'spec',
   spec_files: allureVersion === 1 ? ['allure1/*.spec.*'] : ['allure2/*.spec.*'],
-  helpers: ['../report_helpers/jasmine.afterAll.*'],
+  helpers: ['../helpers/jasmine.afterAll.*'],
   random: false,
   seed: null,
   stopSpecOnExpectationFailure: false,

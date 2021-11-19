@@ -4,7 +4,7 @@
   "description": "",
   "main": "mocha.run.ts",
   "scripts": {
-    "precommit": "tslint -e './node_modules/' -p ./tsconfig.json",
+    "precommit": "tslint -e './node_modules/' -p ./tsconfig.json && tsc --build tsconfig.json",
     "test:mocha_allure2": "ts-node mocha.run.ts --allureV=2",
     "test:jasmine_allure1": "ts-node jasmine.run.ts --allureV=1",
     "test:jasmine_allure2": "ts-node jasmine.run.ts --allureV=2",
