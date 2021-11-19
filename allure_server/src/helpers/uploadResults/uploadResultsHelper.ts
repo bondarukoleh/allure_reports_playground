@@ -56,7 +56,7 @@ function findPreviousReportDir(parentDirFullPath: string): string | null {
       return Number(fs.statSync(path1).birthtime > fs.statSync(path2).birthtime); /* sort by created time */
     }).pop() as string;
   } else if (dirs.length === 1) {
-    latestReportDir = path.resolve(parentDirFullPath, dirs[0]);
+    latestReportDir = dirs[0];
   }
   return latestReportDir.length ? path.join(parentDirFullPath, latestReportDir) : null;
 }

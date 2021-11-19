@@ -31,7 +31,7 @@ router.post('/', fileUploader.single(RESULTS_ARCHIVE_FIELD), async (req, res) =>
 
   findAndCopyPreviousHistory({
     findHistoryFromDir: reportsPlaceDirFullPath,
-    copyHistoryToDir: path.join(extractedResultsDirFullPath, 'history')
+    copyHistoryToDir: extractedResultsDirFullPath
   })
 
   await generateReport({
