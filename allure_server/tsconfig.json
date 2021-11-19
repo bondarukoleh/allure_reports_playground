@@ -1,3 +1,23 @@
 {
   "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "composite": true,
+    "noImplicitReturns": true,
+    "target": "es2017",
+    "rootDir": "./",
+    "sourceMap": true,
+    "outDir": "build",
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "es2017"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "./build/**/*"
+  ],
 }
