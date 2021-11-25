@@ -35,26 +35,7 @@ const findReportPathByBuild = (buildNumber: string, findInDirFullPath: string): 
   return pathElements.slice(indexOfRelativePath).join('/'); /* To get relative path to report e.g. DEV/core/12347 */
 }
 
-/*
-  Extracts url path from {reportTypes: '["DEV","core"]'} to path DEV/core
-*/
-const extractUrlPathFromRequest = (request: Request): string => {
-  console.log(`Extracting url from ${request.body.reportTypes}`)
-  let urlPathToReport = ''
-  try {
-    const testTypesArr = JSON.parse(request?.body?.reportTypes) as unknown as []
-    urlPathToReport = testTypesArr.reduce((gathered: string, pathElem: string) => {
-      return gathered += `${pathElem}/`
-    }, '');
-  } catch (e) {
-    console.error(`Couldn't get the URL path from passed parameters`)
-    console.error(e)
-  }
-  return urlPathToReport
-}
-
 export {
   findReportPathByBuild,
   extractPathFromRequest,
-  extractUrlPathFromRequest
 };

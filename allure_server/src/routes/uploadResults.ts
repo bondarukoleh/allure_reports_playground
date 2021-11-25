@@ -5,20 +5,20 @@ import {routes} from '../data/routes';
 import {fileUploader} from '../middleware'
 import {
   extractPathFromRequest,
-  extractUrlPathFromRequest,
   generateReport,
   getReportPaths,
   extractResults,
   findAndCopyPreviousHistory,
 } from '../helpers';
-import {HOST, PORT} from '../data/constants';
+import {HOST, PORT, REPORTS_DIR_NAME} from '../data/constants';
+import {hasCookie} from '../middleware/auth';
 
 const router = express.Router();
 
 /* This is field name that client will send the archive file with  */
 const RESULTS_ARCHIVE_FIELD = 'allureArchive'
 
-router.post('/', fileUploader.single(RESULTS_ARCHIVE_FIELD), async (req, res) => {
+router.post('/', [hasCookie, fileUploader.single(RESULTS_ARCHIVE_FIELD)], async (req, res) => {
   const BUILD_NUMBER = path.basename(req.file.originalname, '.zip'); /* 12345 */
   const extractedPath = extractPathFromRequest(req)
   const {reportsPlaceDirFullPath, reportDirFullPath} = getReportPaths(extractedPath, BUILD_NUMBER)
@@ -39,12 +39,10 @@ router.post('/', fileUploader.single(RESULTS_ARCHIVE_FIELD), async (req, res) =>
     generateReportTo: reportDirFullPath
   })
 
-  let urlPathToReport = extractUrlPathFromRequest(req)
-
-  res.send(`${HOST}:${PORT}/${urlPathToReport}${BUILD_NUMBER}`);
+  return res.send(`${HOST}:${PORT}/${REPORTS_DIR_NAME}/${BUILD_NUMBER}`);
 });
 
-router.get('/', (req, res) => {
+router.get('/', hasCookie, (req, res) => {
   return res.send('You should upload results here. There is nothing to GET')
 })
 

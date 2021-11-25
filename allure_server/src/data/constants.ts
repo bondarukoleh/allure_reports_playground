@@ -1,5 +1,5 @@
 import {join, resolve} from 'path'
-const {HOST = 'http://localhost', PORT = '4000'} = process.env;
+const {HOST = 'localhost', PORT = '4000', SECRET_KEY} = process.env;
 
 const CONTENT_DIR_NAME = 'content';
 const CONTENT_DIR_FULL_PATH = resolve('content');
@@ -23,4 +23,5 @@ export {
   BACKUP_DIR_FULL_PATH,
   PORT,
   HOST,
+  SECRET_KEY
 }

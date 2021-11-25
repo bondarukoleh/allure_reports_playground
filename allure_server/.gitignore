@@ -10,3 +10,6 @@ build
 # ignore all in content except .keep file
 content/*
 !content/.keep
+
+# local start
+start.sh

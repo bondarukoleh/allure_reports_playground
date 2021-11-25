@@ -25,7 +25,7 @@ interface IExtractResults {
 }
 /* return path with extracted results */
 const extractResults = async ({extractedPath, resultsZipFullPath, buildNumber}: IExtractResults): Promise<string | null> => {
-  const resultsDirFullPass = path.join(BACKUP_DIR_FULL_PATH, extractedPath, buildNumber); // e.g.                           full_path/content/backups/regression/mock/results_backup/12345
+  const resultsDirFullPass = path.join(BACKUP_DIR_FULL_PATH, extractedPath, buildNumber); // e.g. full_path/content/backups/regression/mock/results_backup/12345
 
   /* If there was a mistake - clear previous results backup dir */
   fs.emptyDirSync(resultsDirFullPass);
@@ -65,10 +65,15 @@ interface ICopyPreviousHistory {
   findHistoryFromDir: string,
   copyHistoryToDir: string
 }
+
 /* To get a trend anh history we need to copy history from previous report and copy it to results dir */
 const findAndCopyPreviousHistory = ({findHistoryFromDir, copyHistoryToDir}: ICopyPreviousHistory) => {
   const previousReportDir = findPreviousReportDir(findHistoryFromDir); /* e.g. full_path/content/DEV/core/12344 */
   /* Adding previous report history to new results */
+  if (!previousReportDir) {
+    console.log('No previous history was found')
+    return;
+  }
   copyDir(path.join(previousReportDir, 'history'), path.join(copyHistoryToDir, 'history'));
 }
 
@@ -76,6 +81,7 @@ interface IGenerateReport {
   resultsDirFullPath: string,
   generateReportTo: string
 }
+
 const generateReport = async ({generateReportTo, resultsDirFullPath}: IGenerateReport) => {
   /* clean report with same ID if it is there */
   fs.emptyDirSync(generateReportTo);

@@ -1,8 +1,10 @@
 import * as express from 'express';
 import {routes} from '../data/routes';
+import {hasCookie} from '../middleware/auth';
+
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', hasCookie, (req, res) => {
   return res.send('Allure server alive.')
 })
 
