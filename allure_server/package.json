@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "postinstall": "ts-node ./src/helpers/postInstall.ts",
+    "postinstall": "tsc && ts-node ./src/helpers/postInstall.ts",
     "start": "ts-node server.ts",
     "tsc": "tsc"
   },
@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/express-session": "^1.17.4",
     "@types/fs-extra": "^9.0.13",
     "@types/multer": "^1.4.7",
-    "@types/express-session": "^1.17.4",
     "allure-commandline": "2.13.8",
     "bcrypt": "^5.0.1",
     "express": "4.17.1",
@@ -22,6 +22,7 @@
     "extract-zip": "2.0.1",
     "fs-extra": "10.0.0",
     "multer": "1.4.3",
-    "ts-node": "^10.4.0"
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
   }
 }
