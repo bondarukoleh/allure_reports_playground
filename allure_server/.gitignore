@@ -5,7 +5,7 @@ allure-*
 .jshintrc
 .jshintignore
 *.log
-build
+dist
 
 # ignore all in content except .keep file
 content/*
