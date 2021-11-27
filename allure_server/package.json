@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "postinstall": "tsc && ts-node ./src/helpers/postInstall.ts",
+    "postinstall": "./node_modules/.bin/tsc && ./node_modules/.bin/ts-node ./src/helpers/postInstall.ts",
     "start:ts": "ts-node server.ts",
     "tsc": "tsc"
   },
