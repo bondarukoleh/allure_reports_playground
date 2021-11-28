@@ -7,9 +7,18 @@ allure-*
 *.log
 dist
 
-# ignore all in content except .keep file
+## ignore all in content except .keep files in sub directories
 content/*
 !content/.keep
+
+!content/reports
+content/reports/*
+!content/reports/.keep
+
+!content/backups
+content/backups/*
+!content/backups/.keep
+
 
 # local start
 start.sh

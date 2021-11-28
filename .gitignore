@@ -7,7 +7,3 @@ node_modules
 *.log
 build
 zippedResults
-
-# ignore all in allure_server/content except .keep file
-allure_server/content/*
-!allure_server/content/.keep

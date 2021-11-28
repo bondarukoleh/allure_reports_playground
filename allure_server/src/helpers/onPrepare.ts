@@ -12,4 +12,6 @@ const foldersToCreate = [
   REPORTS_DIR_FULL_PATH,
 ]
 
-foldersToCreate.forEach((dirPath) => fsExtra.ensureDirSync(dirPath))
+export const createFolders = () => {
+  foldersToCreate.forEach((dirPath) => fsExtra.ensureDirSync(dirPath))
+}

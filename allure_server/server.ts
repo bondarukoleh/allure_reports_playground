@@ -2,6 +2,9 @@ import * as express from 'express';
 
 import {PORT} from './src/data/constants'
 import {pluginMiddleware, plugInRoutes} from './src/startup';
+import {createFolders} from './src/helpers/onPrepare'
+
+createFolders();
 
 const app = express();
 

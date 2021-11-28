@@ -8,7 +8,7 @@ export function pluginMiddleware(app) {
     secret: SECRET_KEY,
     resave: false, /* to not save session if it has not modified */
     saveUninitialized: false, /* do not create cookie for uninitialized users */
-    cookie: {maxAge: 600000}, /* cookie will be valid for an hour */
+    cookie: {maxAge: 1200000}, /* milliseconds cookie should be valid */
     name: 'allure-cookie'
   }));
   app.use(express.urlencoded({extended: true}));

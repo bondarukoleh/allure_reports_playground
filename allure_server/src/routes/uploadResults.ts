@@ -10,7 +10,7 @@ import {
   extractResults,
   findAndCopyPreviousHistory,
 } from '../helpers';
-import {HOST, PORT, REPORTS_DIR_NAME} from '../data/constants';
+import {ALLURE_URL, REPORTS_DIR_NAME} from '../data/constants';
 import {hasCookie} from '../middleware/auth';
 
 const router = express.Router();
@@ -39,7 +39,7 @@ router.post('/', [hasCookie, fileUploader.single(RESULTS_ARCHIVE_FIELD)], async 
     generateReportTo: reportDirFullPath
   })
 
-  return res.send(`${HOST}:${PORT}/${REPORTS_DIR_NAME}/${BUILD_NUMBER}`);
+  return res.send(`${ALLURE_URL}/${REPORTS_DIR_NAME}/${BUILD_NUMBER}`);
 });
 
 router.get('/', hasCookie, (req, res) => {
