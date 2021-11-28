@@ -4,9 +4,9 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "postinstall": "tsc && ts-node ./src/helpers/postInstall.ts",
-    "start:ts": "ts-node server.ts",
-    "tsc": "tsc"
+    "compile": "./node_modules/.bin/tsc --outDir dist",
+    "start": "node ./dist/server.js",
+    "start:ts": "ts-node server.ts"
   },
   "keywords": [],
   "author": "",
