@@ -31,6 +31,11 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  if (req.session.loggedIn) {
+    return res.redirect(`/${REPORTS_DIR_NAME}`);
+  }
   res.sendFile(path.join(__dirname, '../public/login.html'));
 });
 

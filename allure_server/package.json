@@ -5,6 +5,7 @@
   "main": "server.ts",
   "scripts": {
     "compile": "./node_modules/.bin/tsc --outDir dist",
+    "postCompile": "node ./dist/src/helpers/postCompile.js",
     "start": "node ./dist/server.js",
     "start:ts": "ts-node server.ts"
   },

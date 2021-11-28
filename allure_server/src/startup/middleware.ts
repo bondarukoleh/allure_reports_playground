@@ -1,11 +1,9 @@
 import * as express from 'express';
-import {REPORTS_DIR_REL_PATH} from '../data/constants'
 import * as session from 'express-session';
 
 import {SECRET_KEY} from '../data/constants'
 
 export function pluginMiddleware(app) {
-  app.use(express.static(REPORTS_DIR_REL_PATH)); // static serving from reports folder
   app.use(session({
     secret: SECRET_KEY,
     resave: false, /* to not save session if it has not modified */

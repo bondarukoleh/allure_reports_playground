@@ -5,7 +5,5 @@ export function plugInRoutes(app) {
   app.use(statusRoute.url, statusRoute.handler);
   app.use(reportsRoute.url, reportsRoute.handler);
   app.use(loginRoute.url, loginRoute.handler);
-  app.get('*', (req, res) => {
-    res.redirect(loginRoute.url)
-  });
+  app.get('*', (req, res) => res.redirect(loginRoute.url));
 };

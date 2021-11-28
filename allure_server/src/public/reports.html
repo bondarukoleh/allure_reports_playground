@@ -39,12 +39,11 @@
   </style>
 </head>
 <body>
-<div class="form-login">
-  <h1>Allure Server</h1>
-  <form id="form-login" action="/login" method="post">
-    <input type="text" name="username" placeholder="Username" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="submit" value="Login">
+<div class="form-reports">
+  <h1>Report</h1>
+  <form id="get-report-form" action="/reports" method="get">
+    <input type="text" name="buildNumber" placeholder="Build Number" required>
+    <input type="submit" value="Get report">
   </form>
 </div>
 </body>
