@@ -100,7 +100,7 @@ Please insert a build number to the input field, and press "Get report" button
 
 #### From API
 To send the results via API, you need to do a couple of things. <br>
-Example how AQA send results you can find in [AutomationTestsCore framework][zipSendExample]
+Example how AQA send results you can find in [report helpers][zipSendExample]
 
 1. Zip the `allure-results` folder after your test run, and name it with BUILD_ID of the CI Pipeline
 2. Gather the information about the tests in array, i.e. `['TEST_ENVIRONMENT', 'TEST_SUITE', 'JOB_NAME']`, etc
@@ -260,7 +260,7 @@ as host machine is functioning.
 [home]: http://localhost:4000/
 [login]: http://localhost:4000/login
 [reports]: http://localhost:4000/reports
-[zipSendExample]: https://github.com/Interfirst/AutomationTestsCore/blob/develop/cypress/support/helpers/reporter/zipAndSendResults.js
+[zipSendExample]: ../report_helpers/zipAndSendResult.js
 [express-session]: https://www.npmjs.com/package/express-session
 [middleware]: src/startup/middleware.ts
 [multer]: https://www.npmjs.com/package/multer
