@@ -7,8 +7,8 @@ const fs = require('fs');
 const {
   TEST_ENV = 'QA',
   ALLURE_SERVER_URL = 'http://localhost:4000',
-  ALLURE_USER_NAME = 'oleh',
-  ALLURE_USER_PASS = '1234',
+  ALLURE_USER_NAME = 'qaadmin',
+  ALLURE_USER_PASS = '1!Pass',
   BUILD_ID = '2',
   BUILD_DEFINITIONNAME = 'Automation.Core'
 } = process.env;

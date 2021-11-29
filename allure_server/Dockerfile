@@ -2,6 +2,7 @@ FROM node:14
 
 ## key for encryption
 ENV SECRET_KEY=${SECRET_KEY}
+ENV HOST=${HOST}
 
 WORKDIR /app
 

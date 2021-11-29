@@ -14,6 +14,7 @@ run()
     -ti \
     --name allure \
     --env SECRET_KEY="$SECRET_KEY" \
+    --env HOST="$HOST" \
     --publish 4000:4000 \
     --volume ~/allure_data:/app/dist/content \
     --restart=always \
