@@ -39,6 +39,7 @@ HEALTHCHECK --interval=10s --timeout=30s --start-period=60s --retries=3 CMD curl
 ## --detach \
 ## --name allure \
 ## --env SECRET_KEY=$SECRET_KEY \
+## --env HOST=$HOST \
 ## --publish 4000:4000 \
 ## --volume ~/allure_data:/app/dist/content \
 ## --restart=always \

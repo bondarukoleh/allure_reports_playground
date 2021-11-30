@@ -11,7 +11,6 @@ run()
   echo "Starting to run container..."
   docker run \
     --detach \
-    -ti \
     --name allure \
     --env SECRET_KEY="$SECRET_KEY" \
     --env HOST="$HOST" \
