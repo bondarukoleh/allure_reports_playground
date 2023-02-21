@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           echo "Env variable from repository: '${{ vars.LOG_LEVEL }}'"
-          echo "Test env is: '$TET_ENV'"
+          echo "Test env is: '$TEST_ENV'"
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Setup Node
