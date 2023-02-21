@@ -18,9 +18,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: |
-        echo "Log level: ${{ github.event.inputs.logLevel }}"
-        echo "Tags: ${{ github.event.inputs.tags }}" 
+      - run:  echo "Log level: ${{ github.event.inputs.logLevel }}"
+              # echo "Tags: ${{ github.event.inputs.tags }}" 
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Setup Node
