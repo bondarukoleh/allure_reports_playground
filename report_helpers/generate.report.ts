@@ -7,7 +7,7 @@ function generateReport(allureVersion: number | string = '') {
 
   reportGenerator.on('exit', function(exitCode) {
     console.log('Generation is finished with code:', exitCode);
-    allureCommandline(['open', `./allure${allureVersion}-report`])
+    // allureCommandline(['open', `./allure${allureVersion}-report`])
   });
 }
 
