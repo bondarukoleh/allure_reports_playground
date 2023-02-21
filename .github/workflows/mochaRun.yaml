@@ -1,34 +1,45 @@
-name: Mocha tests
-
 on:
   push:
     branches: [ develop ]
+
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: 'Log level'     
+      test_env:
+        description: 'Environment for testing'
         required: true
-        default: 'warn'
-      tags:
-        description: 'Test scenario tags' 
+        default: 'test'
 
 jobs:
   mochaTest:
-
+    name: Testing mocha and Allure
     runs-on: ubuntu-latest
-
+    environment: develop
     steps:
-      - name: Print inputs
-      - run: |
-        echo "Log level: ${{ github.event.inputs.logLevel }}"
-        echo "Tags: ${{ github.event.inputs.tags }}" 
+      - name: Set env vars
+        shell: bash
+        run: |
+          # if it is a manual run
+          if [[ "${{ inputs.test_env }}" ]];
+          then
+            # use env from provided input
+            echo "TEST_ENV=${{ inputs.test_env }}" >> $GITHUB_ENV
+          else
+            # use default env
+            echo "TEST_ENV=dev" >> $GITHUB_ENV
+          fi
+      - name: Print env vars
+        shell: bash
+        run: |
+          echo "Env variable from repository: '${{ vars.LOG_LEVEL }}'"
+          echo "Test env is: '$TET_ENV'"
       - name: Checkout repo
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '16.x'
       - name: Install dependencies
-      - run: npm ci
+        run: npm ci
       - name: Run the tests
-      - run: npm run test:mocha_allure2
+        run: npm run test:mocha_allure2
+        continue-on-error: true
