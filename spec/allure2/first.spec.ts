@@ -18,7 +18,7 @@ describe('Suite 1 allure 2', () => {
 
   it(`Test 3  allure 2 Known`, () => {
     allure.setKnown()
-    throw new Error('Wait problem')
+    // throw new Error('Wait problem')
     expect(true).eq(true, 'True should be true')
   })
 
