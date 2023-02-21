@@ -34,7 +34,7 @@
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-allure2-reporter": "^1.2.0",
     "minimist": "^1.2.0",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "mocha-allure2-reporter": "0.0.3",
     "node-fetch": "^2.1.2",
     "ts-node": "^8.4.1",
