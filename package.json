@@ -33,7 +33,7 @@
     "jasmine": "^3.5.0",
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-allure2-reporter": "^1.2.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "mocha": "^6.2.2",
     "mocha-allure2-reporter": "0.0.3",
     "node-fetch": "^2.1.2",
