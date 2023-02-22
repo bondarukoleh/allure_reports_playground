@@ -1,0 +1,151 @@
+[ {
+  "uid" : "75045290f0152da1",
+  "name" : "Test 14  allure 2 addLabel testId",
+  "time" : {
+    "start" : 1677025641129,
+    "stop" : 1677025641130,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f92e85c1298379bb",
+  "name" : "Test 3  allure 2 Known",
+  "time" : {
+    "start" : 1677025641117,
+    "stop" : 1677025641125,
+    "duration" : 8
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "20c17777e83edea6",
+  "name" : "Test 5  allure 2 addOwner",
+  "time" : {
+    "start" : 1677025641125,
+    "stop" : 1677025641126,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24ce3e2ae8a97892",
+  "name" : "Test 12  allure 2 setDescription",
+  "time" : {
+    "start" : 1677025641129,
+    "stop" : 1677025641129,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b7fdc6f99cfa5f7",
+  "name" : "Test 8  allure 2 addTag",
+  "time" : {
+    "start" : 1677025641127,
+    "stop" : 1677025641127,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d62aec4207484eb",
+  "name" : "Test 9  allure 2 addTestType",
+  "time" : {
+    "start" : 1677025641127,
+    "stop" : 1677025641127,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "249568d801637c35",
+  "name" : "Test 4  allure 2 Muted",
+  "time" : {
+    "start" : 1677025641125,
+    "stop" : 1677025641125,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f02f4d4cfdb03346",
+  "name" : "Test 6  allure 2 severity",
+  "time" : {
+    "start" : 1677025641126,
+    "stop" : 1677025641126,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4c49cde52eda484e",
+  "name" : "Test 13  allure 2 addEnvironment",
+  "time" : {
+    "start" : 1677025641129,
+    "stop" : 1677025641129,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c72ae794c9c06ca2",
+  "name" : "Test 7  allure 2 addIssue",
+  "time" : {
+    "start" : 1677025641126,
+    "stop" : 1677025641126,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3066aced35852ed2",
+  "name" : "Test 2  allure 2 Flaky",
+  "time" : {
+    "start" : 1677025641116,
+    "stop" : 1677025641117,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6ac42577f7670a7",
+  "name" : "Test 10  allure 2 step and attachments",
+  "time" : {
+    "start" : 1677025641127,
+    "stop" : 1677025641128,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b7316df555ab197f",
+  "name" : "Test 11  allure 2 addParameter",
+  "time" : {
+    "start" : 1677025641128,
+    "stop" : 1677025641129,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df844ee4aec6707a",
+  "name" : "Test 15  allure 2 addLabel issue",
+  "time" : {
+    "start" : 1677025641130,
+    "stop" : 1677025641130,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a79b5aecc41d43c8",
+  "name" : "Test 1  allure 2. With link",
+  "time" : {
+    "start" : 1677025641115,
+    "stop" : 1677025641116,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

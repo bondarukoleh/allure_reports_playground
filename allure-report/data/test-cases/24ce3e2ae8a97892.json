@@ -1,0 +1,37 @@
+{
+  "uid" : "24ce3e2ae8a97892",
+  "name" : "Test 12  allure 2 setDescription",
+  "fullName" : "Test 12  allure 2 setDescription",
+  "historyId" : "bef13e7e1930b6e4dd20b0b87ebe50dc",
+  "time" : {
+    "start" : 1677025641129,
+    "stop" : 1677025641129,
+    "duration" : 0
+  },
+  "description" : "This is test description",
+  "descriptionHtml" : "This is test description",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "24ce3e2ae8a97892.json",
+  "parameterValues" : [ ]
+}

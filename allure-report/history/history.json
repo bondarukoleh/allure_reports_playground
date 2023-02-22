@@ -1,0 +1,304 @@
+{
+  "1645f02bf0d1328fd7743441e894cd5a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c72ae794c9c06ca2",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/c72ae794c9c06ca2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641126,
+        "stop" : 1677025641126,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d49201ac5fda8c65c726411a14d1fb1f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4c49cde52eda484e",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/4c49cde52eda484e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641129,
+        "stop" : 1677025641129,
+        "duration" : 0
+      }
+    } ]
+  },
+  "bef13e7e1930b6e4dd20b0b87ebe50dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24ce3e2ae8a97892",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/24ce3e2ae8a97892",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641129,
+        "stop" : 1677025641129,
+        "duration" : 0
+      }
+    } ]
+  },
+  "f4b7a438-8e21-44ec-a35f-b34e05b645a2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "249568d801637c35",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/249568d801637c35",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1677025641125,
+        "stop" : 1677025641125,
+        "duration" : 0
+      }
+    } ]
+  },
+  "13594ef1625c11288949182513d431ad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5d62aec4207484eb",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/5d62aec4207484eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641127,
+        "stop" : 1677025641127,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b6453daa5cdb16f509d74364d5c6a7c2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b7fdc6f99cfa5f7",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/6b7fdc6f99cfa5f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641127,
+        "stop" : 1677025641127,
+        "duration" : 0
+      }
+    } ]
+  },
+  "66f8621ff8034a9d97e747e677f654e5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a79b5aecc41d43c8",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/a79b5aecc41d43c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641115,
+        "stop" : 1677025641116,
+        "duration" : 1
+      }
+    } ]
+  },
+  "9c01e17c49c8a4c3a2fd2165fc16e680" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "20c17777e83edea6",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/20c17777e83edea6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641125,
+        "stop" : 1677025641126,
+        "duration" : 1
+      }
+    } ]
+  },
+  "9aee7261b80b265246b4ac41bf7023db" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f92e85c1298379bb",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/f92e85c1298379bb",
+      "status" : "broken",
+      "statusDetails" : "Wait problem",
+      "time" : {
+        "start" : 1677025641117,
+        "stop" : 1677025641125,
+        "duration" : 8
+      }
+    } ]
+  },
+  "f717ac7c9b1a9a69c6889012782eba05" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "df844ee4aec6707a",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/df844ee4aec6707a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641130,
+        "stop" : 1677025641130,
+        "duration" : 0
+      }
+    } ]
+  },
+  "fed8dc3ea30976cf2cdd9c2f0eedb280" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b7316df555ab197f",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/b7316df555ab197f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641128,
+        "stop" : 1677025641129,
+        "duration" : 1
+      }
+    } ]
+  },
+  "ecafee09bab4168fbe2fe84cffd44604" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3066aced35852ed2",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/3066aced35852ed2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641116,
+        "stop" : 1677025641117,
+        "duration" : 1
+      }
+    } ]
+  },
+  "8824b4f2381957e603a8830083cb9349" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a6ac42577f7670a7",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/a6ac42577f7670a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641127,
+        "stop" : 1677025641128,
+        "duration" : 1
+      }
+    } ]
+  },
+  "48575f4ec1fb67b6ff152d5c6eaf5bf7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f02f4d4cfdb03346",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/f02f4d4cfdb03346",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641126,
+        "stop" : 1677025641126,
+        "duration" : 0
+      }
+    } ]
+  },
+  "1537e5e1604aef6b357046c44ebf06bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "75045290f0152da1",
+      "reportUrl" : "http://example.org/build#13/AllureReport/#testresult/75045290f0152da1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677025641129,
+        "stop" : 1677025641130,
+        "duration" : 1
+      }
+    } ]
+  }
+}

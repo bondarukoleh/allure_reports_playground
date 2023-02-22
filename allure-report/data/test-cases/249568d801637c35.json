@@ -1,0 +1,36 @@
+{
+  "uid" : "249568d801637c35",
+  "name" : "Test 4  allure 2 Muted",
+  "historyId" : "f4b7a438-8e21-44ec-a35f-b34e05b645a2",
+  "time" : {
+    "start" : 1677025641125,
+    "stop" : 1677025641125,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Skipped because of environment",
+      "matchedStatuses" : [ "skipped" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "249568d801637c35.json",
+  "parameterValues" : [ ]
+}

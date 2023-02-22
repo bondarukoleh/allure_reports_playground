@@ -1,0 +1,39 @@
+{
+  "uid" : "20c17777e83edea6",
+  "name" : "Test 5  allure 2 addOwner",
+  "fullName" : "Test 5  allure 2 addOwner",
+  "historyId" : "9c01e17c49c8a4c3a2fd2165fc16e680",
+  "time" : {
+    "start" : 1677025641125,
+    "stop" : 1677025641126,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "owner",
+    "value" : "This is the test owner"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "This is the test owner",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "20c17777e83edea6.json",
+  "parameterValues" : [ ]
+}
