@@ -1,12 +1,12 @@
 {
-  "uid" : "3066aced35852ed2",
-  "name" : "Test 2  allure 2 Flaky",
-  "fullName" : "Test 2  allure 2 Flaky",
-  "historyId" : "ecafee09bab4168fbe2fe84cffd44604",
+  "uid" : "7ae9dd9b12a5042d",
+  "name" : "Test 9  allure 2 addTestType",
+  "fullName" : "Test 9  allure 2 addTestType",
+  "historyId" : "13594ef1625c11288949182513d431ad",
   "time" : {
-    "start" : 1677025641116,
-    "stop" : 1677025641117,
-    "duration" : 1
+    "start" : 1677026817019,
+    "stop" : 1677026817019,
+    "duration" : 0
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,6 +16,9 @@
   "labels" : [ {
     "name" : "suite",
     "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "testType",
+    "value" : "This_is_test_type"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -30,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3066aced35852ed2.json",
+  "source" : "7ae9dd9b12a5042d.json",
   "parameterValues" : [ ]
 }

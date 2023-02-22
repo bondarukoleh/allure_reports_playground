@@ -1,12 +1,12 @@
 {
-  "uid" : "f92e85c1298379bb",
+  "uid" : "ad81b212ec47b194",
   "name" : "Test 3  allure 2 Known",
   "fullName" : "Test 3  allure 2 Known",
   "historyId" : "9aee7261b80b265246b4ac41bf7023db",
   "time" : {
-    "start" : 1677025641117,
-    "stop" : 1677025641125,
-    "duration" : 8
+    "start" : 1677026817007,
+    "stop" : 1677026817016,
+    "duration" : 9
   },
   "status" : "broken",
   "statusMessage" : "Wait problem",
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "f92e85c1298379bb.json",
+  "source" : "ad81b212ec47b194.json",
   "parameterValues" : [ ]
 }
