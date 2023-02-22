@@ -1,0 +1,35 @@
+{
+  "uid" : "c4261000ad0ac9af",
+  "name" : "Test 2  allure 2 Flaky",
+  "fullName" : "Test 2  allure 2 Flaky",
+  "historyId" : "ecafee09bab4168fbe2fe84cffd44604",
+  "time" : {
+    "start" : 1677025150376,
+    "stop" : 1677025150377,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4261000ad0ac9af.json",
+  "parameterValues" : [ ]
+}

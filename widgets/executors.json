@@ -1,0 +1,10 @@
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://example.org",
+  "buildOrder" : 8,
+  "buildName" : "Test automation #1",
+  "buildUrl" : "http://example.org/build#13",
+  "reportName" : "Demo allure report",
+  "reportUrl" : "http://example.org/build#13/AllureReport"
+} ]

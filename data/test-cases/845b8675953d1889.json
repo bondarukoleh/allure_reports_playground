@@ -1,0 +1,38 @@
+{
+  "uid" : "845b8675953d1889",
+  "name" : "Test 7  allure 2 addIssue",
+  "fullName" : "Test 7  allure 2 addIssue",
+  "historyId" : "1645f02bf0d1328fd7743441e894cd5a",
+  "time" : {
+    "start" : 1677025150389,
+    "stop" : 1677025150389,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "issue",
+    "value" : "This is test issue"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "845b8675953d1889.json",
+  "parameterValues" : [ ]
+}

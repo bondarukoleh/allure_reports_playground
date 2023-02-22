@@ -1,0 +1,15 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "5da25f2036970bfbcfabf3bd2c216f85",
+    "name" : "Suite 1 allure 2",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 14
+    }
+  } ]
+}

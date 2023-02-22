@@ -1,0 +1,13 @@
+[ {
+  "buildOrder" : 8,
+  "reportUrl" : "http://example.org/build#13/AllureReport",
+  "reportName" : "Demo allure report",
+  "data" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 1,
+    "passed" : 13,
+    "unknown" : 0,
+    "total" : 15
+  }
+} ]
