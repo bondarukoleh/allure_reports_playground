@@ -1,0 +1,38 @@
+{
+  "uid" : "30e4bb14291c2095",
+  "name" : "Test 1  allure 2. With link",
+  "fullName" : "Test 1  allure 2. With link",
+  "historyId" : "66f8621ff8034a9d97e747e677f654e5",
+  "time" : {
+    "start" : 1677027022949,
+    "stop" : 1677027022951,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Link name",
+    "url" : "www.com"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "30e4bb14291c2095.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,38 @@
+{
+  "uid" : "cca654ae5b566d20",
+  "name" : "Test 11  allure 2 addParameter",
+  "fullName" : "Test 11  allure 2 addParameter",
+  "historyId" : "fed8dc3ea30976cf2cdd9c2f0eedb280",
+  "time" : {
+    "start" : 1677027022963,
+    "stop" : 1677027022963,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter_Name",
+    "value" : "Parameter_Value"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cca654ae5b566d20.json",
+  "parameterValues" : [ "Parameter_Value" ]
+}

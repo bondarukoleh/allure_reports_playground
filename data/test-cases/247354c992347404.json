@@ -1,0 +1,38 @@
+{
+  "uid" : "247354c992347404",
+  "name" : "Test 6  allure 2 severity",
+  "fullName" : "Test 6  allure 2 severity",
+  "historyId" : "48575f4ec1fb67b6ff152d5c6eaf5bf7",
+  "time" : {
+    "start" : 1677027022960,
+    "stop" : 1677027022961,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite 1 allure 2"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "247354c992347404.json",
+  "parameterValues" : [ ]
+}

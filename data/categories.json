@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Couldn't wait for condition",
+    "children" : [ {
+      "name" : "Wait problem",
+      "children" : [ {
+        "name" : "Test 3  allure 2 Known",
+        "uid" : "9f5681c4510b6772",
+        "parentUid" : "97c15dc326bc8154d7b88d3f81145932",
+        "status" : "broken",
+        "time" : {
+          "start" : 1677027022952,
+          "stop" : 1677027022959,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "97c15dc326bc8154d7b88d3f81145932"
+    } ],
+    "uid" : "1bf1d6eaa775dc589c15527f249d5744"
+  }, {
+    "name" : "Skipped because of environment",
+    "children" : [ {
+      "name" : "Test ignored",
+      "children" : [ {
+        "name" : "Test 4  allure 2 Muted",
+        "uid" : "ab4fa502d25a26c3",
+        "parentUid" : "9df74d1c17795d72d93db4f27591b7fd",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1677027022960,
+          "stop" : 1677027022960,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9df74d1c17795d72d93db4f27591b7fd"
+    } ],
+    "uid" : "5775d653c0fd289bf6b5ee2c1b10dd24"
+  } ],
+  "name" : "categories"
+}
