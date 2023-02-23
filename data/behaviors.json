@@ -2,12 +2,12 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "Test 1  allure 2. With link",
-    "uid" : "30e4bb14291c2095",
+    "uid" : "3edd228a2d20892d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022949,
-      "stop" : 1677027022951,
+      "start" : 1677190760791,
+      "stop" : 1677190760793,
       "duration" : 2
     },
     "flaky" : false,
@@ -15,12 +15,12 @@
     "parameters" : [ ]
   }, {
     "name" : "Test 2  allure 2 Flaky",
-    "uid" : "91a90d6c2a34f43d",
+    "uid" : "60a9666bcdf64d75",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022951,
-      "stop" : 1677027022951,
+      "start" : 1677190760793,
+      "stop" : 1677190760793,
       "duration" : 0
     },
     "flaky" : false,
@@ -28,51 +28,51 @@
     "parameters" : [ ]
   }, {
     "name" : "Test 3  allure 2 Known",
-    "uid" : "9f5681c4510b6772",
+    "uid" : "31ad295366f92a7b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1677027022952,
-      "stop" : 1677027022959,
-      "duration" : 7
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Test 6  allure 2 severity",
-    "uid" : "247354c992347404",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1677027022960,
-      "stop" : 1677027022961,
-      "duration" : 1
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Test 5  allure 2 addOwner",
-    "uid" : "da5c34fbf9e38af8",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1677027022960,
-      "stop" : 1677027022960,
-      "duration" : 0
+      "start" : 1677190760794,
+      "stop" : 1677190760802,
+      "duration" : 8
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Test 4  allure 2 Muted",
-    "uid" : "ab4fa502d25a26c3",
+    "uid" : "a9ee3b162972e8c9",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1677027022960,
-      "stop" : 1677027022960,
+      "start" : 1677190760802,
+      "stop" : 1677190760802,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test 5  allure 2 addOwner",
+    "uid" : "a88aa2e9751b5ef6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1677190760802,
+      "stop" : 1677190760803,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test 6  allure 2 severity",
+    "uid" : "7980098b48870a39",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1677190760803,
+      "stop" : 1677190760803,
       "duration" : 0
     },
     "flaky" : false,
@@ -80,12 +80,25 @@
     "parameters" : [ ]
   }, {
     "name" : "Test 7  allure 2 addIssue",
-    "uid" : "70ca7534be44e86",
+    "uid" : "80631b53e9cf9c4f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022961,
-      "stop" : 1677027022961,
+      "start" : 1677190760803,
+      "stop" : 1677190760804,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test 9  allure 2 addTestType",
+    "uid" : "d87e2d6d7e855787",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1677190760804,
+      "stop" : 1677190760804,
       "duration" : 0
     },
     "flaky" : false,
@@ -93,38 +106,25 @@
     "parameters" : [ ]
   }, {
     "name" : "Test 8  allure 2 addTag",
-    "uid" : "188baf45c1ec7530",
+    "uid" : "a3c21f98caebf0e7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022961,
-      "stop" : 1677027022961,
+      "start" : 1677190760804,
+      "stop" : 1677190760804,
       "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "Test 9  allure 2 addTestType",
-    "uid" : "161269781b822753",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1677027022961,
-      "stop" : 1677027022962,
-      "duration" : 1
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "Test 10  allure 2 step and attachments",
-    "uid" : "da1047c4fad61a58",
+    "uid" : "e16616e91c0013e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022962,
-      "stop" : 1677027022963,
+      "start" : 1677190760804,
+      "stop" : 1677190760805,
       "duration" : 1
     },
     "flaky" : false,
@@ -132,38 +132,51 @@
     "parameters" : [ ]
   }, {
     "name" : "Test 11  allure 2 addParameter",
-    "uid" : "cca654ae5b566d20",
+    "uid" : "4cef03335a2ad176",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022963,
-      "stop" : 1677027022963,
-      "duration" : 0
+      "start" : 1677190760805,
+      "stop" : 1677190760806,
+      "duration" : 1
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Parameter_Value" ]
   }, {
-    "name" : "Test 12  allure 2 setDescription",
-    "uid" : "71dc7cbe1d532d64",
+    "name" : "Test 13  allure 2 addEnvironment",
+    "uid" : "aece95b25a45674a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022963,
-      "stop" : 1677027022964,
-      "duration" : 1
+      "start" : 1677190760806,
+      "stop" : 1677190760806,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Value" ]
+  }, {
+    "name" : "Test 12  allure 2 setDescription",
+    "uid" : "2ad676c8075c87d2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1677190760806,
+      "stop" : 1677190760806,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Test 15  allure 2 addLabel issue",
-    "uid" : "ffe8b38618120a36",
+    "uid" : "4224dc6f2da3f8e2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022964,
-      "stop" : 1677027022964,
+      "start" : 1677190760807,
+      "stop" : 1677190760807,
       "duration" : 0
     },
     "flaky" : false,
@@ -171,30 +184,17 @@
     "parameters" : [ ]
   }, {
     "name" : "Test 14  allure 2 addLabel testId",
-    "uid" : "6bf3546fffaacb61",
+    "uid" : "bbe2a4ba3ad77b5b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1677027022964,
-      "stop" : 1677027022964,
+      "start" : 1677190760807,
+      "stop" : 1677190760807,
       "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
-  }, {
-    "name" : "Test 13  allure 2 addEnvironment",
-    "uid" : "68b7a9177d540c0f",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1677027022964,
-      "stop" : 1677027022964,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Value" ]
   } ],
   "name" : "behaviors"
 }

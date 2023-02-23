@@ -1,11 +1,11 @@
 {
-  "uid" : "da1047c4fad61a58",
+  "uid" : "e16616e91c0013e",
   "name" : "Test 10  allure 2 step and attachments",
   "fullName" : "Test 10  allure 2 step and attachments",
   "historyId" : "8824b4f2381957e603a8830083cb9349",
   "time" : {
-    "start" : 1677027022962,
-    "stop" : 1677027022963,
+    "start" : 1677190760804,
+    "stop" : 1677190760805,
     "duration" : 1
   },
   "status" : "passed",
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "This is step 1",
       "time" : {
-        "start" : 1677027022962,
-        "stop" : 1677027022963,
-        "duration" : 1
+        "start" : 1677190760805,
+        "stop" : 1677190760805,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "d4456977b8e5a0d",
+        "uid" : "117f53f9a5eff06",
         "name" : "Text attachment to step 1",
-        "source" : "d4456977b8e5a0d.txt",
+        "source" : "117f53f9a5eff06.txt",
         "type" : "text/plain",
         "size" : 26
       } ],
@@ -38,8 +38,8 @@
     }, {
       "name" : "This is step 3",
       "time" : {
-        "start" : 1677027022963,
-        "stop" : 1677027022963,
+        "start" : 1677190760805,
+        "stop" : 1677190760805,
         "duration" : 0
       },
       "status" : "passed",
@@ -76,6 +76,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "da1047c4fad61a58.json",
+  "source" : "e16616e91c0013e.json",
   "parameterValues" : [ ]
 }

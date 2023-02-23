@@ -1,11 +1,11 @@
 {
-  "uid" : "247354c992347404",
-  "name" : "Test 6  allure 2 severity",
-  "fullName" : "Test 6  allure 2 severity",
-  "historyId" : "48575f4ec1fb67b6ff152d5c6eaf5bf7",
+  "uid" : "a88aa2e9751b5ef6",
+  "name" : "Test 5  allure 2 addOwner",
+  "fullName" : "Test 5  allure 2 addOwner",
+  "historyId" : "9c01e17c49c8a4c3a2fd2165fc16e680",
   "time" : {
-    "start" : 1677027022960,
-    "stop" : 1677027022961,
+    "start" : 1677190760802,
+    "stop" : 1677190760803,
     "duration" : 1
   },
   "status" : "passed",
@@ -17,8 +17,8 @@
     "name" : "suite",
     "value" : "Suite 1 allure 2"
   }, {
-    "name" : "severity",
-    "value" : "critical"
+    "name" : "owner",
+    "value" : "This is the test owner"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -28,11 +28,12 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "critical",
+    "severity" : "normal",
+    "owner" : "This is the test owner",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "247354c992347404.json",
+  "source" : "a88aa2e9751b5ef6.json",
   "parameterValues" : [ ]
 }
