@@ -1,12 +1,12 @@
 {
-  "uid" : "80631b53e9cf9c4f",
-  "name" : "Test 7  allure 2 addIssue",
-  "fullName" : "Test 7  allure 2 addIssue",
-  "historyId" : "1645f02bf0d1328fd7743441e894cd5a",
+  "uid" : "2ed90faadb73d74b",
+  "name" : "Test 15  allure 2 addLabel issue",
+  "fullName" : "Test 15  allure 2 addLabel issue",
+  "historyId" : "f717ac7c9b1a9a69c6889012782eba05",
   "time" : {
-    "start" : 1677190760803,
-    "stop" : 1677190760804,
-    "duration" : 1
+    "start" : 1677191410929,
+    "stop" : 1677191410929,
+    "duration" : 0
   },
   "status" : "passed",
   "flaky" : false,
@@ -18,7 +18,7 @@
     "value" : "Suite 1 allure 2"
   }, {
     "name" : "issue",
-    "value" : "This is test issue"
+    "value" : "www.someSite.com/ISSUE-123"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "80631b53e9cf9c4f.json",
+  "source" : "2ed90faadb73d74b.json",
   "parameterValues" : [ ]
 }

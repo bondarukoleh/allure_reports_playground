@@ -1,10 +1,10 @@
 {
-  "uid" : "a9ee3b162972e8c9",
+  "uid" : "2b9ecc690e81a2d5",
   "name" : "Test 4  allure 2 Muted",
-  "historyId" : "961598b5-19d1-4aa1-b413-1ed89a1a0ee8",
+  "historyId" : "131ee935-5db7-439f-addc-cdf4367caa42",
   "time" : {
-    "start" : 1677190760802,
-    "stop" : 1677190760802,
+    "start" : 1677191410924,
+    "stop" : 1677191410924,
     "duration" : 0
   },
   "status" : "skipped",
@@ -31,6 +31,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "a9ee3b162972e8c9.json",
+  "source" : "2b9ecc690e81a2d5.json",
   "parameterValues" : [ ]
 }
