@@ -1,3 +1,5 @@
+name: Run Mocha with Allure report
+
 on:
   push:
     branches: [ develop ]
@@ -9,24 +11,15 @@ on:
         required: true
         default: 'test'
 
+env:
+  TEST_ENV: "${{ inputs.test_env != '' && inputs.test_env || 'test' }}"
+
 jobs:
   mochaTest:
     name: Testing mocha and Allure
     runs-on: ubuntu-latest
     environment: develop
     steps:
-      - name: Set env vars
-        shell: bash
-        run: |
-          # if it is a manual run
-          if [[ "${{ inputs.test_env }}" ]];
-          then
-            # use env from provided input
-            echo "TEST_ENV=${{ inputs.test_env }}" >> $GITHUB_ENV
-          else
-            # use default env
-            echo "TEST_ENV=dev" >> $GITHUB_ENV
-          fi
       - name: Print env vars
         shell: bash
         run: |
@@ -43,9 +36,11 @@ jobs:
       - name: Run the tests
         run: npm run test:mocha_allure2
         continue-on-error: true
-      - name: Deploy
+      - name: Publish pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
-          publish_branch: develop
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Committing the report for ${{ github.event.head_commit.message }}'
