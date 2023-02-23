@@ -6,13 +6,13 @@
       "name" : "Wait problem",
       "children" : [ {
         "name" : "Test 3  allure 2 Known",
-        "uid" : "2594dce71168082b",
+        "uid" : "cf9b890a2461bede",
         "parentUid" : "97c15dc326bc8154d7b88d3f81145932",
         "status" : "broken",
         "time" : {
-          "start" : 1677191517493,
-          "stop" : 1677191517503,
-          "duration" : 10
+          "start" : 1677194490861,
+          "stop" : 1677194490869,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -27,12 +27,12 @@
       "name" : "Test ignored",
       "children" : [ {
         "name" : "Test 4  allure 2 Muted",
-        "uid" : "94669634ee27536f",
+        "uid" : "f178ad6527a963ac",
         "parentUid" : "9df74d1c17795d72d93db4f27591b7fd",
         "status" : "skipped",
         "time" : {
-          "start" : 1677191517504,
-          "stop" : 1677191517504,
+          "start" : 1677194490869,
+          "stop" : 1677194490869,
           "duration" : 0
         },
         "flaky" : false,

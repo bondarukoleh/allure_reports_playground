@@ -1,11 +1,11 @@
 {
-  "uid" : "45c60537fe1db003",
-  "name" : "Test 8  allure 2 addTag",
-  "fullName" : "Test 8  allure 2 addTag",
-  "historyId" : "b6453daa5cdb16f509d74364d5c6a7c2",
+  "uid" : "2984643ba4fa699f",
+  "name" : "Test 6  allure 2 severity",
+  "fullName" : "Test 6  allure 2 severity",
+  "historyId" : "48575f4ec1fb67b6ff152d5c6eaf5bf7",
   "time" : {
-    "start" : 1677191517506,
-    "stop" : 1677191517506,
+    "start" : 1677194490870,
+    "stop" : 1677194490870,
     "duration" : 0
   },
   "status" : "passed",
@@ -17,8 +17,8 @@
     "name" : "suite",
     "value" : "Suite 1 allure 2"
   }, {
-    "name" : "tag",
-    "value" : "This_is_test_tag"
+    "name" : "severity",
+    "value" : "critical"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -28,11 +28,11 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "normal",
+    "severity" : "critical",
     "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ "This_is_test_tag" ]
+    "tags" : [ ]
   },
-  "source" : "45c60537fe1db003.json",
+  "source" : "2984643ba4fa699f.json",
   "parameterValues" : [ ]
 }

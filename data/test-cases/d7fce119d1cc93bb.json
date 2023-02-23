@@ -1,11 +1,11 @@
 {
-  "uid" : "ef7c60ba5ccd1810",
+  "uid" : "d7fce119d1cc93bb",
   "name" : "Test 1  allure 2. With link",
   "fullName" : "Test 1  allure 2. With link",
   "historyId" : "66f8621ff8034a9d97e747e677f654e5",
   "time" : {
-    "start" : 1677191517489,
-    "stop" : 1677191517491,
+    "start" : 1677194490858,
+    "stop" : 1677194490860,
     "duration" : 2
   },
   "status" : "passed",
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ef7c60ba5ccd1810.json",
+  "source" : "d7fce119d1cc93bb.json",
   "parameterValues" : [ ]
 }

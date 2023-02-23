@@ -1,11 +1,11 @@
 {
-  "uid" : "40f657abade687e2",
-  "name" : "Test 13  allure 2 addEnvironment",
-  "fullName" : "Test 13  allure 2 addEnvironment",
-  "historyId" : "d49201ac5fda8c65c726411a14d1fb1f",
+  "uid" : "b13975235de7c225",
+  "name" : "Test 9  allure 2 addTestType",
+  "fullName" : "Test 9  allure 2 addTestType",
+  "historyId" : "13594ef1625c11288949182513d431ad",
   "time" : {
-    "start" : 1677191517510,
-    "stop" : 1677191517510,
+    "start" : 1677194490871,
+    "stop" : 1677194490871,
     "duration" : 0
   },
   "status" : "passed",
@@ -17,13 +17,13 @@
     "name" : "suite",
     "value" : "Suite 1 allure 2"
   }, {
+    "name" : "testType",
+    "value" : "This_is_test_type"
+  }, {
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ {
-    "name" : "ENV[From test]",
-    "value" : "Value"
-  } ],
+  "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "40f657abade687e2.json",
-  "parameterValues" : [ "Value" ]
+  "source" : "b13975235de7c225.json",
+  "parameterValues" : [ ]
 }
