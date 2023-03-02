@@ -13,6 +13,7 @@ on:
 
 env:
   TEST_ENV: "${{ inputs.test_env != '' && inputs.test_env || 'test' }}"
+  STEP_FLAG: false
 
 jobs:
   mochaTest:
@@ -25,14 +26,12 @@ jobs:
 
       - name: Set output
         if: ${{ steps.step1.outcome == 'success' }}
-        run: |
-          echo "AAAAAAA"
-          echo "::set-output name=result::success"
+        run: echo "STEP_FLAG=true" >> $GITHUB_ENV
   
   otherJob:
     name: Other
     needs: mochaTest
-    if: ${{ needs.mochaTest.outputs.result == 'success' }}
+    if: ${{ env.STEP_FLAG == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Print env vars
