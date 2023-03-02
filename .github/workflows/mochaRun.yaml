@@ -28,8 +28,8 @@ jobs:
   otherJob:
     name: Other
     needs: mochaTest
-    if: ${{ contains(needs.mochaTest.result, 'THIS_IS_SUCCESS') }}
+    # if: ${{ contains(needs.mochaTest.result, 'THIS_IS_SUCCESS') }}
     runs-on: ubuntu-latest
     steps:
       - name: Print env vars
-        run: echo "ASDASDASDASDASD"
+        run: echo "${{ needs.mochaTest.result }}"
