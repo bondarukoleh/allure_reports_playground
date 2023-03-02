@@ -25,8 +25,9 @@ jobs:
 
       - name: Set output
         if: ${{ steps.step1.outcome == 'success' }}
-        run: echo "AAAAAAA"
-        run: echo "::set-output name=result::success"
+        run: |
+          echo "AAAAAAA"
+          echo "::set-output name=result::success"
   
   otherJob:
     name: Other
